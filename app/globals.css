@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light only;
+}
+
+body {
+  @apply bg-secondary text-slate-900 antialiased min-h-screen;
+}
+
+a {
+  @apply text-primary-600 hover:text-primary-700 transition-colors;
+}
+
+.container-responsive {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.glass-panel {
+  @apply bg-white/80 backdrop-blur border border-slate-200/60 shadow-sm rounded-2xl;
+}
+
+.grid-auto-fit {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card-hover {
+  @apply transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide;
+}
